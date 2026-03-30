@@ -108,7 +108,7 @@ export const FileExplorer = ({
   });
 
   const treeData = useMemo(() => {
-    return convertFilesToTreeItems(files);
+    return convertFilesToTreeItems(files as any);
   }, [files]);
 
   const handleFileSelect = useCallback((
